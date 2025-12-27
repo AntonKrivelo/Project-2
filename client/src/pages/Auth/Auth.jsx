@@ -12,11 +12,19 @@ const Auth = () => {
       <div className={styles.Form}>
         {isRegister ? <Registration /> : <Login />}
         {isRegister ? (
-          <Button sx={{ marginTop: '10px' }} onClick={() => setIsRegister(!isRegister)}>
+          <Button
+            variant="outlined"
+            sx={{ marginTop: '10px' }}
+            onClick={() => setIsRegister(!isRegister)}
+          >
             to Login Form
           </Button>
         ) : (
-          <Button sx={{ marginTop: '10px' }} onClick={() => setIsRegister(!isRegister)}>
+          <Button
+            variant="outlined"
+            sx={{ marginTop: '10px' }}
+            onClick={() => setIsRegister(!isRegister)}
+          >
             to Register Form
           </Button>
         )}
