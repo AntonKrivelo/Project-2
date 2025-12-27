@@ -6,10 +6,10 @@ const AuthFormWrapper = ({ header, children }) => {
       component="div"
       sx={{
         p: 3,
-        border: '1px solid #ddd',
+        border: '1px solid #d5d5d5ff',
         borderRadius: 2,
         boxShadow: 2,
-        bgcolor: 'white',
+        bgcolor: '#C0C0C0',
         maxWidth: 400,
         display: 'flex',
         flexDirection: 'column',
