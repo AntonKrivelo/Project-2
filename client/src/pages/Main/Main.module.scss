@@ -1,9 +1,33 @@
 .wrapperMain {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  &::before {
+    z-index: 10;
+    text-transform: uppercase;
+    content: 'Portfolio Treaker';
+    display: inline-block;
+    top: 35%;
+    left: 10%;
+    position: absolute;
+    color: #fff;
+    font-size: clamp(20px, 5vw, 42px);
+    font-weight: 900;
+  }
+  &::after {
+    z-index: 10;
+    top: 55%;
+    left: 10%;
+    color: #fff;
+    position: absolute;
+    display: inline-block;
+    font-size: clamp(16px, 2vw, 22px);
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+
+    font-size: 14px;
+    content: '"The crypto tracker is a convenient tool for tracking the rates and dynamics of cryptocurrencies in real time. Get up-to-date data on Bitcoin, Ethereum and other assets, analyze charts, create your own portfolio and monitor market changes in one place."';
+  }
   img {
+    position: relative;
     max-width: 100%;
     height: auto;
     border-radius: 8px;
