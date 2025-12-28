@@ -1,13 +1,15 @@
-import mainImg from '../../images/Main/main.jpg';
+import Courses from '../../components/Courses/Courses';
+import mainImg from '../../images/Main/main2.jpg';
+
 import styles from './Main.module.scss';
 
 const Main = () => {
-  console.log(mainImg);
   return (
     <div>
       <div className={styles.wrapperMain}>
         <img src={mainImg} alt="main-img" />
       </div>
+      <Courses />
     </div>
   );
 };
